@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Love+Light&family=Protest+Revolution&display=swap');
+    *{
+        padding: 0%;
+        margin: 0%;
+    }
+#port{
+    border: 1px;
+    width:fit-content;
+    padding: 10px;
+    margin-left: 4%;
+    color: rgb(202, 202, 202);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+     font-size: 100px;
+     letter-spacing: 6px;
+}
+#peru{
+   margin-top: 20px;
+   color: rgb(199, 198, 197);
+   font-size: 150px;
+   margin-top: 150px;
+   margin-left: 230px;
+   font-family: "Love Light", cursive;
+
+}
+.love-light-regular {
+  font-family: "Love Light", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+    #sec{
+        background-image: url('./mine.JPG');
+        width: 98.9svw;
+        height: 100svh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      
+    }
+    
+    #sec1{
+        background-image: url('./me.jpeg');
+        width: 98.9svw;
+        height: 100svh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+      
+    }
+    #can{
+        background-color: rgba(33, 31, 31, 0.566);
+        background-size: cover;
+       border-radius: 10px;
+          width: 90svw;
+          height: 90svh;
+       
+    }
+    #can1{
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.199);
+        background-size: cover;
+        border-radius: 10px;
+        width: 50svw;
+        height: 90svh;
+        margin-left: 40%;
+    }
+    #sec2{
+        background-image: url('./lights.jpg');
+        width:98.9svw;
+        height: 100svh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        justify-content: center;
+        align-items: center;
+        display:flex;
+      
+    }
+    #can2{
+        position: relative;
+        background-color: rgba(255, 255, 255, 0.101);
+        background-size: cover;
+        border-radius: 10px;
+        width: 90svw;
+        height: 90svh;
+       
+    }
+    #img1{
+        position: absolute;
+        width:15svw;
+        top:30px;
+        left:80px;
+        transform:rotate(10deg);
+    }
+    #img2{
+        position: absolute;
+        width:15svw;
+        top:30px;
+        left:600px;
+        transform:rotate(-10deg);
+    }
+    #img3{
+        position: absolute;
+        width:15svw;
+        top:30px;
+        left:1100px;
+        transform:rotate(10deg);
+    }
+    #img4{
+        position: absolute;
+        width:15svw;
+        top:400px;
+        left:90px;
+        transform:rotate(-10deg);
+    }
+    #img5{
+        position: absolute;
+        width:15svw;
+        top:400px;
+        left:600px;
+        transform:rotate(10deg);
+    }
+    #img6{
+        position: absolute;
+        width:15svw;
+        top:400px;
+        left:1100px;
+        transform:rotate(-10deg);
+    }
+    #img1{
+        transition: transform .2s;
+    }
+    #img1:hover{
+        cursor: pointer;
+        transform: scale(1.1) rotate(-10deg);
+
+    }
+    #img2{
+        transition: transform .2s;
+    }
+    #img2:hover{
+        cursor: pointer;
+        transform: scale(1.1) rotate(10deg);
+
+    }
+    #img3{
+        transition: transform .2s;
+    }
+    #img3:hover{
+        cursor: pointer;
+        transform: scale(1.1) rotate(-10deg);
+
+    }
+    #img4{
+        transition: transform .2s;
+    }
+    #img4:hover{
+        cursor: pointer;
+        transform: scale(1.1) rotate(10deg);
+
+    }
+
+    #img5{
+        transition: transform .2s;
+    }
+    #img5:hover{
+        cursor: pointer;
+        transform: scale(1.1) rotate(-10deg);
+
+    }
+    #img6{
+        transition: transform .2s;
+    }
+    #img6:hover{
+        cursor: pointer;
+        transform: scale(1.1) rotate(10deg);
+
+    }
+    #line{
+        display: inline;
+       
+    }
+    #god{
+        word-spacing: 100px;
+                    text-transform: uppercase;
+                    text-align: center;
+                    position:absolute;
+                    margin-top:4%;
+                   margin-left: 19%;
+                   font-size: 20px;
+                   color: rgb(230, 219, 204);
+                    border-style:none;
+                    letter-spacing: 5px;
+    }
+    #det{
+        color: black;
+        font-size: 20px;
+       text-align: center;
+       font-family:monospace;
+    }
+    #insta{
+        cursor: pointer;
+        width: 50px;
+        margin-left: 30px;
+        margin-top: 20px;
+        transition: transform .2s;
+    }
+    #insta:hover{
+        cursor: pointer;
+        transform: scale(1.1) rotate(8deg);
+    }
+    #in{
+        cursor: pointer;
+        width: 80px;
+        margin-left: 30px;
+        margin-top: 20px;
+        transition: transform .2s;
+    }
+    #in:hover{
+        cursor: pointer;
+        transform: scale(1.1) rotate(8deg);
+    }
+    #git{
+        cursor: pointer;
+        width: 130px;
+        margin-left: 350px;
+        margin-bottom:5px;
+        transition: transform .2s;
+    }
+    #git:hover{
+        cursor: pointer;
+        transform: scale(1.1) rotate(-8deg);
+    }
+    #x{
+        cursor: pointer;
+        width: 55px;
+        margin-left: 8px;
+        transition: transform .2s;
+    }
+    #x:hover{
+        cursor: pointer;
+        transform: scale(1.1) rotate(-15deg);
+    }
+    #proj{
+        color: rgba(88, 88, 88, 0.241);
+        text-align:center;
+        font-size: 530px;
+
+    }
+    #li{
+        text-decoration: none;
+        color: azure;
+    }
+    #li:hover{
+        transition: transform .2s;
+        text-decoration:line-through;
+        color:rgb(248, 233, 190);
+    }
+    #sec3{
+        background-image: url('./rec.JPG');
+        height: 300px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        justify-content: center;
+        align-items: center;
+        display:flex ;
+    }
+    #can3{
+        position: relative;
+        background-color: rgba(125, 125, 125, 0.438);
+        background-size: cover;
+        border-radius: 10px;
+        width: 1300px;
+        height: 200px;   
+    }
+    #icon{
+        margin-left: 250px;
+    }
+</style>
+</head>
+<body>
+
+
+
+
+    <div id="sec">
+        <div id="can">
+            <br>
+            <br>
+            <br>
+<h1 id="port">PORTFOLIO<sub>CONTAINS</sub></h1>
+<br>
+<br>
+<div id="god">
+    <ul id="bad">
+        <li id="line"><a href="#sec1" id="li">ABOUT</a></li>
+        <li id="line"><a href="#sec" id="li">HOME</a></li>
+        <li id="line"><a href="#sec2" id="li">PROJECT</a></li>
+        <li id="line"><a href="#sec3" id="li">CONNECT</a></li>
+    </ul>
+    
+  </div>
+  <h1 id="peru">Sankara Narayanan</h1>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <div id="sec1">
+        <div id="can1"><br>
+            <p style="font-weight: bold;text-align: center;font-size:80px;">HELLO EVERYONE!!!</p><br><br><br><br>
+           <p id="det">
+            
+                          I'm Sankara Narayanan ,now pursuing my third Year from the department of "INFORMATION TECHNOLOGY" at Rajalakshmi Enginnering College <br>
+                          I'm a Frontend Developer<br>
+                          I'm a UI/UX Designer
+           </p>
+           <br><br>
+           <p style="font-weight: bold;text-align: center;font-size:80px;text-decoration: line-through;">CONNECT</p>
+           <a href="https://www.instagram.com/sankaranarayanan_sk/" target="_blank" ><img id="insta" src="./insta.png"></a>
+           <a href="https://www.linkedin.com/in/sankara-narayanan-kumaran-061032229/" target="_blank" ><img id="in" src="./in.png"></a>
+           <a href="https://github.com/sankar1092" target="_blank" ><img id="git" src="./git.png"></a>
+           <a href="https://twitter.com/S_NarayananK" target="_blank" ><img id="x" src="./x.png"></a>
+           <p style="text-align: center; font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-size:10px;margin-top: 60px;">@2024Copyrights</p>
+           <p style="text-align: center;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-size: 10px;">Developed By Sankara Narayanan</p>
+        </div>
+    </div>
+
+
+
+
+
+    <div id="sec2">
+        
+        <div id="can2">
+            <h1 id="proj">PROJ</h1>
+<a href="https://sankar1092.github.io/spotify/" target="_blank"><img id="img1" src="./img1.jpg"></a>
+<a href="https://sankar1092.github.io/hack/Hack.html" target="_blank"><img id="img2" src="./img2.jpg"></a>
+<a href="https://sankar1092.github.io/Travel/" target="_blank"><img id="img3" src="./img3.jpg"></a>
+<a href="https://sankar1092.github.io/course/" target="_blank"><img id="img4" src="./img4.jpg"></a>
+<a href="" target="_blank"><img id="img5" src="./img5.jpg"></a>
+<a href="https://www.figma.com/file/rsvYVkYqCBfLmh8FUa3CvK/Innovision23?type=design&node-id=60-2087&mode=design" target="_blank"><img id="img6" src="./img6.jpg"></a>    
+</div>
+    </div>
+
+
+
+    <div id="sec3">
+        <div id="can3">
+           <div id="icon">
+            <a href="https://www.instagram.com/sankaranarayanan_sk/" target="_blank" ><img id="insta" src="./insta.png"></a>
+            <a href="https://www.linkedin.com/in/sankara-narayanan-kumaran-061032229/" target="_blank" ><img id="in" src="./in.png"></a>
+            <a href="https://github.com/sankar1092" target="_blank" ><img id="git" src="./git.png"></a>
+            <a href="https://twitter.com/S_NarayananK" target="_blank" ><img id="x" src="./x.png"></a>
+        </div>
+        <p style="font-weight: bold;text-align: center;font-size:50px;text-decoration: line-through;margin-top:-70px;">LINK</p>
+        <div id="cnt">
+        <p  style="text-align: center; font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-size:16px;margin-top: 10px;">sankaranarayanan9962@gmail.com</p>
+        <p  style="text-align: center; font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-size:10px;">7904388647</p>
+    </div>
+        <p style="text-align: center; font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-size:10px;margin-top: 15px;">@2024 Copyrights | All Rights Reserved</p>
+        <p style="text-align: center;font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;font-size: 10px;">Developed By Sankara Narayanan</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
